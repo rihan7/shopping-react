@@ -1,0 +1,73 @@
+.card {
+  width: 100%;
+  margin: 1rem 0;
+  display: grid;
+  grid-template-rows: 180px 150px auto;
+  grid-template-areas: "image" "description" "footer";
+  border-radius: 18px;
+  background: white;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4);
+  transition: 0.3s ease;
+}
+
+.cardImage img {
+  grid-area: image;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px 18px 0 0;
+  object-fit: cover;
+}
+.cardDescription {
+  grid-area: description;
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cardDescription p {
+  font-size: 14px;
+  color: gray;
+  text-overflow: ellipsis;
+}
+.cardTitle {
+  margin-bottom: 0.75rem;
+}
+.cardFooter {
+  margin: 0 -1px;
+  /* padding: 1rem 1.5rem; */
+  height: 3rem;
+  /* border-radius: 0 0 15px 15px; */
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.cardFooter span {
+  transition: 0.3s ease;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background-color: #28a745;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.cardFooter span:nth-child(1) {
+  border-right: 1px solid #00771c;
+  border-radius: 0 0 0 15px;
+}
+.cardFooter span:nth-child(2) {
+  border-radius: 0 0 15px 0;
+}
+.cardFooter span:hover {
+  border: none;
+  transform: scale(1.1);
+  background: white;
+  color: #28a745;
+  border: 1px solid #28a745;
+}
+.cardFooter span:active {
+  transform: scale(1.005);
+  background: #28a745;
+  color: white;
+}

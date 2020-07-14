@@ -1,0 +1,94 @@
+.mobileNav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 501;
+  width: 165px;
+  height: 100vh;
+  padding: 0 10px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navList a {
+  color: rgb(95, 95, 95);
+}
+
+.brandName {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.navList {
+  display: flex;
+}
+
+.navList > div {
+  margin: 8px;
+}
+
+.mobileNav .brandName {
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobileNav .navList {
+  display: flex;
+  flex-direction: column;
+}
+
+.badge {
+  display: inline-block;
+  width: auto;
+  padding: 0 2px;
+  height: 80%;
+  border-radius: 5px;
+  background: #28a745;
+  color: white;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.translateRight {
+  animation: scale-up-hor-right 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.translateLeft {
+  animation: scale-up-hor-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@media (max-width: 520px) {
+  .navList {
+    display: none;
+  }
+}
+
+@keyframes scale-up-hor-right {
+  0% {
+    transform: translateX(100%);
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: translateX(0%);
+    transform-origin: 100% 100%;
+  }
+}
+
+@keyframes scale-up-hor-left {
+  0% {
+    transform: translateX(0%);
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: translateX(100%);
+    transform-origin: 100% 100%;
+  }
+}

@@ -1,0 +1,15 @@
+.grid {
+   display: grid;
+   justify-content: center;
+   grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
+   grid-auto-flow: dense;
+   grid-gap: 1rem;
+   /* padding: 1rem; */
+}
+
+.loading {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: calc(100vh - 56px);
+}

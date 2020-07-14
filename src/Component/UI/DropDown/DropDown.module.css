@@ -1,0 +1,11 @@
+.dropdown {
+   position: absolute;
+   top: 48px;
+   width: 100px;
+   padding: 0.5rem 1rem;
+   background: #f0f0f0;
+   border: 1px solid #dbdbdb;
+   border-radius: 5px;
+   transform: translateX(-40%);
+   transition: height 300ms ease;
+}
